@@ -4,7 +4,7 @@ import java.time.LocalTime;
 
 public class Sessao {
 	
-	public LocalTime tempo;
+	public LocalTime tempo = LocalTime.of(0, 1);
 
 	public LocalTime getTempo() {
 		return tempo;
