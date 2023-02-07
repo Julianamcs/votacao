@@ -3,15 +3,12 @@ package com.julianamcs.votacao.service;
 import com.julianamcs.votacao.model.Pauta;
 import com.julianamcs.votacao.repository.PautaRepository;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
 public class PautaService {
 
-	@Autowired
 	private final PautaRepository pautaRepository;
-
 
     public PautaService(PautaRepository pautaRepository) {
     	

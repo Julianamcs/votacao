@@ -32,7 +32,6 @@ public class PautaController {
     private PautaService pautaService;
 
 
-    @Autowired
     private ModelMapper modelMapper;
 
     @PostMapping

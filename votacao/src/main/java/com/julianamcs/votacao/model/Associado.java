@@ -1,35 +1,24 @@
 package com.julianamcs.votacao.model;
 
+import jakarta.validation.constraints.NotBlank;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Getter
+@Setter
+@NoArgsConstructor
 public class Associado {
 
+	@NotBlank(message = "Campo 'nome' não pode ser branco ou nulo")
 	private String nome;
-	private String cpf;
-	private Assembleia assembleia;
-	private Voto voto;
 	
-	public String getNome() {
-		return nome;
-	}
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
-	public String getCpf() {
-		return cpf;
-	}
-	public void setCpf(String cpf) {
-		this.cpf = cpf;
-	}
-	public Assembleia getAssembleia() {
-		return assembleia;
-	}
-	public void setAssembleia(Assembleia assembleia) {
-		this.assembleia = assembleia;
-	}
-	public Voto getVoto() {
-		return voto;
-	}
-	public void setVoto(Voto voto) {
-		this.voto = voto;
-	}
+	@NotBlank(message = "Campo 'cpf' não pode ser branco ou nulo")
+	private String cpf;
+	
+	private Assembleia assembleia;
+	
+	@NotBlank(message = "Campo 'voto' não pode ser branco ou nulo")
+	private Voto voto;
 	
 }
